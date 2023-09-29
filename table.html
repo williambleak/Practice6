@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<meta charset="UTF-8">
+	
+<title>HTML Practice 6 - Tables</title>
+
+<style type="text/css">
+div{
+   text-align: center;
+}
+.sched{
+   margin: auto;
+   width: 550px;
+   border: solid 2px #000000;
+   padding: 1px;
+   border-spacing: 5px;
+   border-collapse: separate;
+}
+td{
+   border: solid #000000;
+   padding: 1px;
+   border-spacing: 5px;
+   border-collapse: separate;
+}
+th{
+   background-color: lightgray;
+   border: solid 1px #000000;
+}
+colgroup{
+   background-color: lightgray;
+   border: solid 1px #000000;
+}
+.green{
+   background-color: green;
+}
+</style>
+</head>
+<body>
+<div>
+   <table class="sched">
+      <caption>Class Schedule</caption>
+      <colgroup span="1">
+      <tr class="green">
+         <th>Courses</th>
+         <td>Monday</td>
+         <td>Tuesday</td>
+         <td>Wednsday</td>
+         <td>Thursday</td>
+         <td>Friday</td>
+      </tr>
+      <tr>
+         <th>Info 1120</th>
+         <td></td>
+         <td>9/11</td>
+         <td></td>
+         <td>9/11</td>
+         <td rowspan="2"></td>
+      </tr>
+      <tr>
+         <th>Math 1010</th>
+         <td colspan="4">12-1</td>
+         <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
+         <!--Spanned from Row 1-->
+      </tr>
+      <tr>
+         <th>INFO 2420</th>
+         <td colspan="5">Online Avaliable 24/7</td>
+         <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
+         <!--Spanned from Row 1-->
+      </tr>
+   </table>
+</div>
+
+
+
+</body>
+</html>
+
